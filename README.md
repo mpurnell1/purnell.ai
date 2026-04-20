@@ -10,10 +10,8 @@ Static HTML + CSS, no build step. Served locally with [Caddy](https://caddyserve
 site/              # web root
   index.html       # landing page
   articles/        # reading list
-  projects/        # projects
-  fonts/           # font comparison sandbox
   css/site.css     # shared styles
-  resume.pdf       # linked from the landing page (not committed)
+  resume.pdf       # linked from the landing page
   CNAME            # custom domain for GitHub Pages
 .github/workflows/pages.yml  # deploys site/ to Pages
 Caddyfile          # local dev config
@@ -33,4 +31,4 @@ Push to `main`. The Pages workflow uploads `site/` as the artifact and publishes
 
 ## Eventual home
 
-Intended to eventually live on a Raspberry Pi Zero 2 W alongside a Discord bot, using the same `site/` directory as Caddy's web root.
+Intended to eventually live on a Raspberry Pi Zero 2 W, using the same `site/` directory as Caddy's web root.
