@@ -13,6 +13,12 @@
 		<priority>0.7</priority>
 	</url>
 	<url>
+		<loc>https://purnell.ai/music/</loc>
+		<lastmod>2026-04-20</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>https://purnell.ai/articles/ai-box-experiment/</loc>
 		<lastmod>2026-04-20</lastmod>
 		<changefreq>yearly</changefreq>
