@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contributions · Matt Purnell</title>
+<meta name="description" content="Open source contributions by Matt Purnell across projects I've worked with.">
+<meta name="theme-color" content="#0d1117">
+<link rel="canonical" href="https://purnell.ai/contributions/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://purnell.ai/contributions/">
+<meta property="og:title" content="Contributions · Matt Purnell">
+<meta property="og:description" content="Open source contributions across projects I've worked with.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<main>
+		<a class="back" href="/">
+			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+			Back
+		</a>
+
+		<header class="page">
+			<h1 class="page-title">Contributions</h1>
+			<div class="meta">
+				<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+				<time datetime="2026-04-20">2026-04-20</time>
+			</div>
+		</header>
+
+		<article class="prose">
+			<p>Pull requests I've landed across projects I care about. Mostly safety, infrastructure, and testing work.</p>
+
+			<h2>commaai/openpilot</h2>
+			<ul>
+				<li><a href="https://github.com/commaai/openpilot/pull/36830" target="_blank" rel="noopener noreferrer"><strong>transformations: move Cython to pure Python</strong></a> &ndash; Rewrote the transformations module from Cython to pure Python, dropping a build-time dependency.</li>
+				<li><a href="https://github.com/commaai/openpilot/pull/36846" target="_blank" rel="noopener noreferrer"><strong>loggerd: Fix test that fails on non-TICI devices</strong></a> &ndash; Fixed a loggerd test that had been failing on non-comma hardware.</li>
+				<li><a href="https://github.com/commaai/openpilot/pull/36766" target="_blank" rel="noopener noreferrer"><strong>tools: Handle smaller terminal sizes in replay</strong></a> &ndash; Quality-of-life fix for the replay tool on narrow terminals.</li>
+			</ul>
+
+			<h2>commaai/opendbc</h2>
+			<ul>
+				<li><a href="https://github.com/commaai/opendbc/pull/2949" target="_blank" rel="noopener noreferrer"><strong>safety: remove redundant checks in psa, rivian, and toyota</strong></a> &ndash; Cleanup across vehicle-specific safety code.</li>
+				<li><a href="https://github.com/commaai/opendbc/pull/2948" target="_blank" rel="noopener noreferrer"><strong>gm: Refactor to make branches clearer and remove unreachable <code>else</code></strong></a> &ndash; Readability pass on GM safety logic.</li>
+				<li><a href="https://github.com/commaai/opendbc/pull/3149" target="_blank" rel="noopener noreferrer"><strong>CI: update CI to reflect removal of docker</strong></a> &ndash; Migrated CI off Docker after the container dependency was dropped.</li>
+			</ul>
+
+			<h2>sunnypilot/sunnypilot</h2>
+			<ul>
+				<li><a href="https://github.com/sunnypilot/sunnypilot/pull/1602" target="_blank" rel="noopener noreferrer"><strong>ci: Add unit test to prevent MADS DM regressions</strong></a> &ndash; Added regression coverage for the driver monitoring system.</li>
+				<li><a href="https://github.com/sunnypilot/sunnypilot/pull/1610" target="_blank" rel="noopener noreferrer"><strong>docs: Update branch installation instructions in README</strong></a> &ndash; Cut 58 lines of outdated branch recommendations and redirected users to the community forum.</li>
+				<li><a href="https://github.com/sunnypilot/sunnypilot/pull/1453" target="_blank" rel="noopener noreferrer"><strong>docs: Update README installation branches and discord links</strong></a> &ndash; Refreshed install paths for the current supported branches and pointed community links at the new forum.</li>
+			</ul>
+
+			<h2>getsentry/sentry-python</h2>
+			<ul>
+				<li><a href="https://github.com/getsentry/sentry-python/pull/4039" target="_blank" rel="noopener noreferrer"><strong>ref(utils): Explicitly use None default when checking metadata</strong></a> &ndash; Silenced a DeprecationWarning and prevented a future <code>KeyError</code> from <code>importlib.metadata</code> changes landing in Python 3.14.</li>
+			</ul>
+		</article>
+
+		<footer class="page-footer">
+			<p>Last updated 2026-04-20</p>
+		</footer>
+	</main>
+</body>
+</html>

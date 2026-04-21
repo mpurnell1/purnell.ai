@@ -141,6 +141,13 @@ h1.page-title {
 	color: var(--fg);
 	margin: 0 0 1.25rem;
 }
+.prose h2 {
+	font-family: 'Newsreader', serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: var(--fg);
+	margin: 2rem 0 0.75rem;
+}
 .prose ul {
 	list-style: disc outside;
 	margin: 0 0 1.25rem;
