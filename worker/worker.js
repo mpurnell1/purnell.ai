@@ -6,6 +6,7 @@ export default {
     const ip = request.headers.get('cf-connecting-ip') || '';
     const acceptLanguage = request.headers.get('accept-language') || '';
     const url = new URL(request.url);
+    const ref = url.searchParams.get('ref') || '';
 
     // Click tracker
     ctx.waitUntil(
@@ -19,7 +20,7 @@ export default {
           no_sessions: true,
           hits: [{
             path: '/resume.pdf',
-            ref: referer,
+            ref: ref || referer,
             user_agent: userAgent,
             ip: ip,
           }],
@@ -42,6 +43,7 @@ export default {
     if (cf.timezone) fields.push({ name: '🕐 Timezone', value: cf.timezone, inline: true });
     if (cf.colo) fields.push({ name: '🏭 CF Colo', value: cf.colo, inline: true });
 
+    if (ref) fields.push({ name: '🏷️ Source', value: ref, inline: true });
     if (referer) fields.push({ name: '↩️ Referrer', value: referer.slice(0, 1000), inline: false });
     if (url.search) fields.push({ name: '🔗 Query', value: url.search.slice(0, 500), inline: false });
 

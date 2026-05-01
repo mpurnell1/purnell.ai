@@ -2,3 +2,7 @@ name = "resume-tracker"
 main = "worker.js"
 compatibility_date = "2026-05-01"
 workers_dev = false
+
+routes = [
+  { pattern = "purnell.ai/resume*", zone_name = "purnell.ai" }
+]
