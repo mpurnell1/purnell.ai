@@ -7,6 +7,7 @@ export default {
     const acceptLanguage = request.headers.get('accept-language') || '';
     const url = new URL(request.url);
     const ref = url.searchParams.get('ref') || '';
+    if (url.pathname !== '/resume') return fetch(request);
 
     // Click tracker
     ctx.waitUntil(
