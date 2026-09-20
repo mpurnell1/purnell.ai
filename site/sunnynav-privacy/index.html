@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sunnynav privacy policy · Matt Purnell</title>
+<meta name="description" content="Privacy policy for sunnynav, the Android Auto companion app for the sunnypilot nav branch.">
+<meta name="theme-color" content="#0d1117">
+<link rel="canonical" href="https://purnell.ai/sunnynav-privacy/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://purnell.ai/sunnynav-privacy/">
+<meta property="og:title" content="sunnynav privacy policy">
+<meta property="og:description" content="What the sunnynav app stores, where data goes, and what it never does.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+	<main>
+		<a class="back" href="/" aria-label="Back to home">
+			<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+			Back
+		</a>
+
+		<header class="page">
+			<h1 class="page-title">sunnynav privacy policy</h1>
+			<div class="meta">
+				<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+				<time datetime="2026-09-20">2026-09-20</time>
+			</div>
+		</header>
+
+		<article class="prose">
+			<p>sunnynav is a companion app for a comma device running the sunnypilot <code>nav</code> fork branch. It sends destinations to that device and mirrors its guidance on Android Auto and on the phone.</p>
+
+			<h2>What the app stores</h2>
+			<p>Everything you enter stays in the app's private storage on your phone: the device's addresses, the comma dongle id and device token, and your Mapbox token. None of it is sent to the app's author or to any analytics service. The app has no account, no sign-in and no advertising.</p>
+
+			<h2>Where data goes</h2>
+			<ul>
+				<li><strong>Your comma device</strong>, on your own network or through comma's relay: the destination you send, favorites, and the device settings you change.</li>
+				<li><strong>comma's relay</strong> (athena.comma.ai), only when you set up the relay: the same destination calls, authenticated with your comma device token.</li>
+				<li><strong>Mapbox</strong>, with your own Mapbox token: map tiles for the head unit, and, when the phone cannot reach the device, place search and route previews. Those previews start from the phone's location, so the app asks for location permission the first time it needs one; the coordinates go to Mapbox and to nobody else. Denying the permission only disables previews away from the car.</li>
+			</ul>
+
+			<h2>What the app does not do</h2>
+			<p>It does not collect or share personal data with the author or third parties, does not run analytics or crash reporting, and does not keep location history. Uninstalling the app deletes everything it stored.</p>
+
+			<h2>Contact</h2>
+			<p>Questions go to the app's thread on <a href="https://community.sunnypilot.ai" target="_blank" rel="noopener noreferrer">community.sunnypilot.ai</a> or by direct message to the author there.</p>
+		</article>
+
+		<footer class="page-footer">
+			<p>Last updated 2026-09-20</p>
+		</footer>
+	</main>
+
+	<footer class="site">
+		<div class="inner">
+			<p>&copy; 2026 Matt Purnell</p>
+			<nav aria-label="Footer">
+				<a href="https://github.com/mpurnell1" target="_blank" rel="noopener noreferrer">GitHub</a>
+				<a href="https://www.linkedin.com/in/matthew-c-purnell/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				<a href="https://github.com/mpurnell1/purnell.ai" target="_blank" rel="noopener noreferrer">Source</a>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
