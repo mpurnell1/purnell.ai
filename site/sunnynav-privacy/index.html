@@ -36,20 +36,21 @@
 		</header>
 
 		<article class="prose">
-			<p>sunnynav is a companion app for a comma device running the sunnypilot <code>nav</code> fork branch. It sends destinations to that device and mirrors its guidance on Android Auto and on the phone.</p>
+			<p>sunnynav is a companion app for a comma device running the sunnypilot <code>nav</code> fork branch, published on Google Play by Matt Purnell. It sends destinations to that device and mirrors its guidance on Android Auto and on the phone.</p>
 
 			<h2>What the app stores</h2>
 			<p>Everything you enter stays in the app's private storage on your phone: the device's addresses, the comma dongle id and device token, and your Mapbox token. None of it is sent to the app's author or to any analytics service. The app has no account, no sign-in and no advertising.</p>
 
 			<h2>Where data goes</h2>
 			<ul>
-				<li><strong>Your comma device</strong>, on your own network or through comma's relay: the destination you send, favorites, and the device settings you change.</li>
-				<li><strong>comma's relay</strong> (athena.comma.ai), only when you set up the relay: the same destination calls, authenticated with your comma device token.</li>
-				<li><strong>Mapbox</strong>, with your own Mapbox token: map tiles for the head unit, and, when the phone cannot reach the device, place search and route previews. Those previews start from the phone's location, so the app asks for location permission the first time it needs one; the coordinates go to Mapbox and to nobody else. Denying the permission only disables previews away from the car.</li>
+				<li><strong>Your comma device</strong>, on your own network or through comma's relay: the destination you send, favorites, the device settings you change, and the Mapbox token you choose to send it during setup.</li>
+				<li><strong>comma's relay</strong> (athena.comma.ai), only when you set up the relay: the same destination calls, authenticated with your comma device token, under <a href="https://comma.ai/privacy" target="_blank" rel="noopener noreferrer">comma's privacy policy</a>.</li>
+				<li><strong>Mapbox</strong>, with your own Mapbox token, under <a href="https://www.mapbox.com/legal/privacy" target="_blank" rel="noopener noreferrer">Mapbox's privacy policy</a>: map tiles for the head unit, whose requests name the map area shown, so Mapbox sees where the car is driving while the head unit is connected; and, when the phone cannot reach the device, the text you search for and route previews. Those previews start from the phone's location, so the app asks for location permission the first time it needs one; the coordinates go to Mapbox and to nobody else. Denying the permission only disables previews away from the car. Tiles are kept in the app's cache for up to 30 days; clearing the app's cache removes them.</li>
+				<li><strong>The host of a shared link</strong>: when you share a place to sunnynav from another app, sunnynav opens the shared link once to read its coordinates, so that host (Google Maps for a maps.app.goo.gl link) sees the request.</li>
 			</ul>
 
 			<h2>What the app does not do</h2>
-			<p>It does not collect or share personal data with the author or third parties, does not run analytics or crash reporting, and does not keep location history. Uninstalling the app deletes everything it stored.</p>
+			<p>It does not collect or share personal data with the author or any third party beyond the ones above, does not run analytics or crash reporting, and does not keep a location history. Uninstalling the app deletes everything it stored. This policy is also linked from the app's Settings.</p>
 
 			<h2>Contact</h2>
 			<!-- TODO: link to the app's forum post once it exists and drop the username -->
