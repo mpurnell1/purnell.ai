@@ -171,6 +171,14 @@ h1.page-title {
 	transition: color 0.15s ease, text-decoration-thickness 0.15s ease;
 }
 .prose a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
+.prose code {
+	font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+	font-size: 0.9em;
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 0.3rem;
+	padding: 0.1rem 0.4rem;
+}
 p.empty { color: var(--muted); font-style: italic; }
 .page-footer {
 	margin-top: 3rem;
